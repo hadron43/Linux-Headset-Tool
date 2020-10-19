@@ -2,6 +2,8 @@
 
 Ubuntu (and many other distros of Linux) doesn't recognize the microphone of connected bluetooth headset. This leads to issues while attending calls, etc. This program aims at solving this issue.
 
+***Tested on `Ubuntu 20.04.1 LTS x86_64` with Linux Kernel Version `5.4.0-51-generic`. The bluetooth headset used was `realme Buds Wireless`.***
+
 ## Dependencies
 
 - ofono
@@ -9,7 +11,7 @@ Ubuntu (and many other distros of Linux) doesn't recognize the microphone of con
 
 ## Setup
 
-Source : ![Blog Link](https://itectec.com/ubuntu/ubuntu-cant-change-profile-to-hsp-for-bluetooth-headset/)
+Source : [Blog Link](https://itectec.com/ubuntu/ubuntu-cant-change-profile-to-hsp-for-bluetooth-headset/)
 
 1. Clone this repository
 
@@ -48,3 +50,19 @@ sudo apt install make
 - `headset -h` : Switch to handfree mode
 - `headset -a` : Switch to A2DP mode
 - `headset --help` : Show detailed help
+
+## Uninstall
+
+Run this from your cloned repo location if you are using apt:
+
+```sh
+make uninstall-all
+```
+
+***OR***
+
+Run this from your cloned repo location if you are not using apt and then maunally uninstall dependencies:
+
+```sh
+make uninstall
+```
