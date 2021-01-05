@@ -2,6 +2,10 @@
 
 ofono/test/disable-modem /phonesim
 pulseaudio --kill
+sleep 2
 pulseaudio --start
-pulseeffects --quit
-pulseeffects &
+
+# Uncomment these, if you have pulseeffects installed on your system
+# pulseeffects --quit
+# pulseeffects &
+
